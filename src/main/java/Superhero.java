@@ -1,12 +1,14 @@
-public class Superhero {
+public class Superhero
+{
 
     private String helteNavn;
-   private String ægteNavn;
+    private String ægteNavn;
     private int årstal;
     private String superkraft;
-   private boolean human;
+    private boolean human;
 
-    public Superhero(String helteNavn, String ægteNavn, int årstal, String superkraft, boolean human) {
+    public Superhero(String helteNavn, String ægteNavn, int årstal, String superkraft, boolean human)
+    {
         this.helteNavn = helteNavn;
         this.ægteNavn = ægteNavn;
         this.årstal = årstal;
@@ -15,31 +17,64 @@ public class Superhero {
     }
 
     public String getHelteNavn()
-    {return helteNavn;
+    {
+        return helteNavn;
     }
 
     public String getÆgteNavn()
-    {return ægteNavn;
+    {
+        return ægteNavn;
     }
 
     public int getÅrstal()
-    {return årstal;
+    {
+        return årstal;
     }
 
-    public String getSuperkraft() {
+    public String getSuperkraft()
+    {
         return superkraft;
     }
 
-    public boolean getHuman(){
+    public boolean isHuman()
+    {
         return human;
     }
-    public int setAntal() {
-        return setAntal();
+
+    public void setHelteNavn(String helteNavn)
+    {
+        this.helteNavn = helteNavn;
+    }
+
+    public void setÆgteNavn(String ægteNavn)
+    {
+        this.ægteNavn = ægteNavn;
+    }
+
+    public void setÅrstal(int årstal)
+    {
+        this.årstal = årstal;
+    }
+
+    public void setSuperkraft(String superkraft)
+    {
+        this.superkraft = superkraft;
+    }
+
+    public void setHuman(boolean human)
+    {
+        this.human = human;
     }
 
     @Override
-   public String toString() {
-    return helteNavn + " " + ægteNavn + " " + årstal + " " + superkraft + " " + human;
-
-}
+    public String toString()
+    {
+        return "Superhero{" +
+                    "Heltenavn" + helteNavn + '\n' +
+                    ", ægteNavn='" + ægteNavn + '\n' +
+                    ", aarstal=" + årstal +
+                    ", superkraft='" + superkraft + '\n' +
+                    ", human=" + human +
+                    '}';
+    }
 }
