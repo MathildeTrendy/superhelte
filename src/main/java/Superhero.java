@@ -1,5 +1,4 @@
-public class Superhero
-{
+public class Superhero {
 
     private String helteNavn;
     private String ægteNavn;
@@ -7,8 +6,7 @@ public class Superhero
     private String superkraft;
     private boolean human;
 
-    public Superhero(String helteNavn, String ægteNavn, int årstal, String superkraft, boolean human)
-    {
+    public Superhero(String helteNavn, String ægteNavn, int årstal, String superkraft, boolean human) {
         this.helteNavn = helteNavn;
         this.ægteNavn = ægteNavn;
         this.årstal = årstal;
@@ -16,65 +14,62 @@ public class Superhero
         this.human = human;
     }
 
-    public String getHelteNavn()
-    {
+    public Superhero() {
+
+    }
+
+    public String getHelteNavn() {
         return helteNavn;
     }
 
-    public String getÆgteNavn()
-    {
+    public String getÆgteNavn() {
         return ægteNavn;
     }
 
-    public int getÅrstal()
-    {
+    public int getÅrstal() {
         return årstal;
     }
 
-    public String getSuperkraft()
-    {
+    public String getSuperkraft() {
         return superkraft;
     }
 
-    public boolean isHuman()
-    {
+    /*public boolean isHuman() {
+        return human;
+    }*/
+
+    public boolean getHuman() {
         return human;
     }
 
-    public void setHelteNavn(String helteNavn)
-    {
+    public void setHelteNavn(String helteNavn) {
         this.helteNavn = helteNavn;
     }
 
-    public void setÆgteNavn(String ægteNavn)
-    {
+    public void setÆgteNavn(String ægteNavn) {
         this.ægteNavn = ægteNavn;
     }
 
-    public void setÅrstal(int årstal)
-    {
+    public void setÅrstal(int årstal) {
         this.årstal = årstal;
     }
 
-    public void setSuperkraft(String superkraft)
-    {
+    public void setSuperkraft(String superkraft) {
         this.superkraft = superkraft;
     }
 
-    public void setHuman(boolean human)
-    {
+    public void setHuman(boolean human) {
         this.human = human;
     }
 
+
     @Override
-    public String toString()
-    {
-        return "Superhero{" +
-                    "Heltenavn" + helteNavn + '\n' +
-                    ", ægteNavn='" + ægteNavn + '\n' +
-                    ", aarstal=" + årstal +
-                    ", superkraft='" + superkraft + '\n' +
-                    ", human=" + human +
-                    '}';
+    public String toString() {
+        return
+                    "Heltenavn: " + helteNavn + '\n' +
+                                "Rigtige navn: " + ægteNavn + '\n' +
+                                "Oprindelsesår: " + årstal + '\n' +
+                                "Superkraft: " + superkraft + '\n' +
+                                "Er et menneske : " + human + '\n';
     }
 }

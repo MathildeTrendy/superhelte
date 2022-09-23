@@ -1,12 +1,10 @@
 import java.util.ArrayList;
 
-public class Database
-{
+public class Database {
 
-    private static ArrayList<Superhero> superheroes = new ArrayList<>();
+    public ArrayList<Superhero> superheroes = new ArrayList<>();
 
-    public void createTestData()
-    {
+    public void createTestData() {
         createSuperhero("Bobbel", "Samme som heltenavn", 1998, "Tale med dyr", false);
         createSuperhero("Superman", "Clark Kent", 1978, "Flyve", false);
         createSuperhero("Kaptajn Underhyler", "Knold", 2017, "Flyve", true);
@@ -16,8 +14,7 @@ public class Database
     }
 
 
-    public void createSuperhero(String heltenavn, String ægtenavn, int årstal, String superkraft, boolean human)
-    {
+    public void createSuperhero(String heltenavn, String ægtenavn, int årstal, String superkraft, boolean human) {
 
         Superhero hero = new Superhero(heltenavn, ægtenavn, årstal, superkraft, human);
 
@@ -25,29 +22,29 @@ public class Database
 
     }
 
-    public static ArrayList<Superhero> getSuperheroes()
-    {            //public betyder, at du kan bruge metoden i en anden klasse
-        for (int i = 0; i < superheroes.size(); i++)
-        {
-            System.out.println(superheroes);
-        }
-
-        return null;
+    public ArrayList<Superhero> getSuperheroes() {
+        return superheroes;
     }
 
-    public Superhero searchFor(String searchTerm)
+   /* public ArrayList<Superhero> resultater = new ArrayList<>(); // lav arraylist af resultater
+    String searchTerm = scanner.nextLine();
+
     {
-        for (Superhero superhero : superheroes)
-        {
-            if (superhero.getHelteNavn().equalsIgnoreCase(searchTerm))
-            {
-                return superhero;
+        for (Superhero superhero : resultater) {
+            if (superhero.getHelteNavn().equalsIgnoreCase(searchTerm)) {
+                resultater.add(superhero); // i stedet for return her, add til resultater
             }
-
         }
-        return null;                                         //hele arrayet loopes igennem, men intet fundet = "null" returneres, altså intet.
+        return resultater; // return resultater
+
     }
 
+    public Superhero searchFor(String searchTerm) {
+        return new Superhero();
+    }
+
+
+    */
 }
 
 
